@@ -3,6 +3,14 @@ Logistic  System
 """
 import random
 
+class Location:
+    """
+    Assigning user's location
+    """
+    def __init__(self, city, postoffice):
+        self.city = city
+        self.postoffice = postoffice
+
 class Item:
     """
     Assigning Item and its price
@@ -13,13 +21,6 @@ class Item:
     def __str__(self):
         return f'{self.price}'
 
-class Location:
-    """
-    Assigning user's location
-    """
-    def __init__(self, city, postoffice):
-        self.city = city
-        self.postoffice = postoffice
 
 class Vehicle:
     """
